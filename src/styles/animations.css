@@ -1,0 +1,31 @@
+/* Previous animations remain the same */
+
+/* Enhanced Project Card Animations */
+.project-card {
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    top: 0;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.project-card img {
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project-card:hover img {
+    transform: scale(1.05);
+}
+
+.project-content {
+    transition: all 0.3s ease;
+}
+
+.project-card:hover .project-content {
+    transform: translateY(-5px);
+}
+
+/* Previous animations remain the same */
