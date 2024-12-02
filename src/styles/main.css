@@ -70,20 +70,19 @@ body {
     padding-left: 20px;
     padding-right: 20px;
     gap: 10px;
-  }
-  .logo:hover {
-    filter: drop-shadow(0 0 2em #646cffaa);
+    transition: transform 300ms ease, box-shadow 300ms ease; /* Suavidade da animação */
+}
+
+.logo:hover {
+    transform: scale(1.05); /* Aumenta levemente o tamanho */
     cursor: pointer;
-  }
-  .logo.vanilla:hover {
-    filter: drop-shadow(0 0 2em #f7df1eaa);
-  }
-  
-  .logo img {
+}
+
+.logo img {
     max-width: 100%; /* Makes the image scale to fit the width of the div */
     max-height: 100%; /* Ensures the image height stays within the div */
     object-fit: contain; /* Maintains aspect ratio while fitting inside the div */
-  }
+}
 
 .company-name {
     color: black;
